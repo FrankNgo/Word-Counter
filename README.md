@@ -8,19 +8,19 @@ A program to count how many times a word appears in a set of words.
 
 ## Specifications
 
-* Take user input to test that users can enter input
+Take user input to test that users can enter input
 - Example input:
   - Text: My name is Frank
   - String to find: "Frank"
 - Example output:
   - Counter: "Frank" Appears 1 time
-* Search through a string of words to find out how many occurrences of a word appears to test if searching for a word can be done
+Search through a string of words to find out how many occurrences of a word appears to test if searching for a word can be done
 - Example input:
   - Text: My name is Frank
   - String to find: "Frank"
 - Example output:
   - Counter: "Frank" Appears 1 time
-* Return the number of counted occurrences to test that the counting of words can be done
+Return the number of counted occurrences to test that the counting of words can be done
 - Example input:
   - Text: My name is Frank
   - String to find: "Frank"
