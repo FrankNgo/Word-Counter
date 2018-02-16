@@ -8,37 +8,44 @@ A program to count how many times a word appears in a set of words.
 
 ## Specifications
 
-Take user input to test that users can enter input for word to search for
-- Example input:
-  - Text: My name is Frank
-  - String to find: "Frank"
-- Example output:
-  - Counter: "Frank" Appears 1 time
-Take user input to test that users can enter input for word to find in
-- Example input:
-  - Text: My name is Frank
-  - String to find: "Frank"
-- Example output:
-  - Counter: "Frank" Appears 1 time
-Search through a string of words to find out how many occurrences of a word appears to test if searching for a word can be done
-- Example input:
-  - Text: My name is Frank
-  - String to find: "Frank"
-- Example output:
-  - Counter: "Frank" Appears 1 time
-Return the number of counted occurrences to test that the counting of words can be done
-- Example input:
-  - Text: My name is Frank
-  - String to find: "Frank"
-- Example output:
-  - Counter: "Frank" Appears 1 time
+- Take user input to test that users can enter input for word to search for
+  - Example input:
+    - Text: My name is Frank
+    - String to find: "Frank"
+  - Example output:
+    - Counter: "Frank" Appears 1 time
+- Take user input to test that users can enter input for word to find in
+  - Example input:
+    - Text: My name is Frank
+    - String to find: "Frank"
+  - Example output:
+    - Counter: "Frank" Appears 1 time
+- Search through a string of words to find out how many occurrences of a word appears to test if searching for a word can be done
+  - Example input:
+    - Text: My name is Frank
+    - String to find: "Frank"
+  - Example output:
+    - Counter: "Frank" Appears 1 time
+- Return the number of counted occurrences to test that the counting of words can be done
+  - Example input:
+    - Text: My name is Frank
+    - String to find: "Frank"
+  - Example output:
+    - Counter: "Frank" Appears 1 time
+- Search through a string of words to find out how many occurrences of a word appears to test if searching for a word can be done with no case sensitive letters
+  - Example input:
+    - Text: My name is frank
+    - String to find: "Frank"
+  - Example output:
+    - Counter: "Frank" or "frank" Appears 1 time
+
 
 ### Installing
 
   * Open Terminal
   * Cd to desktop or where user would like to store directory by typing in: cd Desktop
-  * Copy application contents by typing in your Terminal: git clone https://github.com/FrankNgo/Address-Book.git
-  * Navigate to the application directory by typing in: cd Address-Book
+  * Copy application contents by typing in your Terminal: git clone https://github.com/FrankNgo/Word-Counter.git
+  * Navigate to the application directory by typing in: cd Word-Counter
   * Restore the applications dependencies by typing in: dotnet restore
   * Build the application by typing in: dotnet build
   * Run and open the application by typing in: dotnet run

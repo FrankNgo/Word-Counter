@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/styles.css" type="text/css">
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <h1>Word Counter</h1>
+        <div class="well">
+        <form method="post" action="/result">
+          <div class="form-group">
+            <h1><label for="find-word">Enter a word to find</label></h1>
+            <input type="text" name="find-word" class="form-control" style="width: 400px">
+          </div>
+          <div class="form-group">
+            <h2>Enter in a phrase</h2>
+            <textarea name="input-phrase" rows="10" cols="50" placeholder="Text..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Enter</button>
+        </form>
+        <div class="output">
+          <h2>Number of times your word occurs: @Model</h2>
+        </div>
+      </div>
+      </div>
+    </center>
+  </body>
+</html>

@@ -1,14 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
+using WordCounter.Models;
 
 namespace WordCounter.Controllers
 {
   public class HomeController : Controller
   {
-
-    [Route("/")]
-    public ActionResult Form()
+    [HttpGet("/")]
+    public ActionResult Index()
     {
-      return View("Index", "This is a message from the controller");
+      string emptyField = "";
+      return View("Index", emptyField);
+    }
+
+    [HttpPost("/result")]
+    public ActionResult Result()
+    {
+      string findWord = Request.Form["find-word"];
+      string inputPhrase = Request.Form["input-phrase"];
+      WordCount newWordCount = new WordCount(inputPhrase, findWord);
+      int displayCount = newWordCount.RepeatCounter();
+      return View("Index", displayCount);
     }
   }
 }
