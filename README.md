@@ -1,27 +1,31 @@
-# Anagram
+# Word Counter
 
 #### By Frank Ngo
 
 ## Description
 
-A program to test if a set of words are anagrams of another word.
+A program to count how many times a word appears in a set of words.
 
 ## Specifications
 
-  * Check that the user can enter in a word into the first field for the word to test.
-  * Check that the user can enter in words into the test field for the words to test from.
-    * Check if the user entered in case sensitive characters
-      * Expected Input: 'dog'
-      * Expected Output: True
-      * Expected Input: 'Dog'
-      * Expected Output: True
-    * Check if the user entered in a alphanumeric character
-      * Expected Input: '3dog'
-      * Expected Output: True
-    * Check if the user entered in a special character
-      * Expected Input: '$dog'
-      * Expected Output: False
-  * Check that the form proceeds and user can enter in information.
+* Take user input to test that users can enter input
+- Example input:
+  - Text: My name is Frank
+  - String to find: "Frank"
+- Example output:
+  - Counter: "Frank" Appears 1 time
+* Search through a string of words to find out how many occurrences of a word appears to test if searching for a word can be done
+- Example input:
+  - Text: My name is Frank
+  - String to find: "Frank"
+- Example output:
+  - Counter: "Frank" Appears 1 time
+* Return the number of counted occurrences to test that the counting of words can be done
+- Example input:
+  - Text: My name is Frank
+  - String to find: "Frank"
+- Example output:
+  - Counter: "Frank" Appears 1 time
 
 ### Installing
 
