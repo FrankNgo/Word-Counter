@@ -29,5 +29,16 @@ namespace WordCounter.Models.Tests
       //Assert
       Assert.AreEqual(testString, testInput);
     }
+    [TestMethod]
+    public void RepeatCounter_GetsCount_ReturnInt()
+    {
+      //Arrange
+      WordCount newWordCount = new WordCount("My name is Frank and Frank","Frank");
+      int testCount = 2;
+      //Act
+      int testInput = newWordCount.RepeatCounter();
+      //Assert
+      Assert.AreEqual(testCount, testInput);
+    }
   }
 }
